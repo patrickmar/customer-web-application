@@ -30,8 +30,8 @@ class Plans extends Component<IPlansProps, IPlansState> {
         text: "Lorem ipsum dolor sit amet consectetur. Egestas nunc sed sit sed.",
         status: true,
         interestRate: 6,
-        color: "red-400",
-        bgColor: "red-25",
+        color: "text-primary-400",
+        bgColor: "bg-primary-25",
       },
       {
         name: "Basic plan",
@@ -79,8 +79,8 @@ class Plans extends Component<IPlansProps, IPlansState> {
               <Breadcrumb pageName="Saving Plans" />
               <div className="grid grid-cols-5 gap-8">
                 <div className="col-span-5 xl:col-span-3">
-                  <div className="rounded-lg border border-stroke bg-white shadow-default dark:border-[2E3A47] dark:bg-[#24303F]">
-                    <div className="border-b border-stroke py-4 px-7 dark:border-[#2E3A47]">
+                  <div className="rounded-lg border border-[#E2E8F0] bg-white shadow-default dark:border-[2E3A47] dark:bg-[#24303F]">
+                    <div className="border-b border-[#E2E8F0] py-4 px-7 dark:border-[#2E3A47]">
                       <h3 className="font-medium text-black dark:text-white">
                         Add Plans
                       </h3>

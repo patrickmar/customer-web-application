@@ -14,7 +14,7 @@ const SavingsCard = (props: Props) => {
   const { name, text, status, color, bgColor, interestRate } = props;
   return (
     <div
-      className={`rounded-lg border border-stroke bg-${bgColor} bg-planBg bg-blend-overlay p-2 dark:border-strokedark dark:bg-boxdark md:p-3 xl:p-3`}
+      className={`rounded-lg border border-stroke bg-${bgColor} bg-planbg  bg-blend-overlay p-2 dark:border-strokedark dark:bg-boxdark md:p-3 xl:p-3`}
     >
       <div className="flex items-end justify-between">
         <span className="text-lg font-bold text-black dark:text-white">

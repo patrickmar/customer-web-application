@@ -169,7 +169,7 @@ class Airtime extends Component<IAirtimeProps, IState> {
                   </label>
                   <div className="relative z-20 bg-white dark:bg-[#1d2a39]">
                     <Select
-                      classNamePrefix="react-select dark:bg-[#1d2a39]"
+                      classNamePrefix="react-select"
                       className="relative z-20 w-full dark:bg-[#1d2a39] appearance-none rounded border border-[#E2E8F0] bg-transparent py-1.5 outline-none transition focus:border-red-600 active:border-red-600 dark:border-[#2E3A47]"
                       isSearchable={false}
                       value={selectedNetwork}

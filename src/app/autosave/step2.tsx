@@ -62,7 +62,10 @@ const Step2 = ({
       {/* Fund Source */}
       <div className="mb-5.5 flex flex-col gap-5.5 sm:flex-row">
         <div className="w-full">
-          <label className="inputLabelClass" htmlFor="fundSource">
+          <label
+            className="mb-3 block text-sm font-medium text-black dark:text-white"
+            htmlFor="fundSource"
+          >
             Set Primary Source of Funds
           </label>
           <ul className="grid w-full gap-6 md:grid-cols-3">
@@ -80,7 +83,7 @@ const Step2 = ({
               </li>
             ))}
           </ul>
-          <small className="form-error">
+          <small className="mt-2 text-xs text-red-600 dark:text-red-600">
             {touched.fundSource && formErrors.fundSource}
           </small>
         </div>
