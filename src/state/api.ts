@@ -14,10 +14,10 @@ export const api = createApi({
     baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL,
     // ✅ Add these options:
     mode: "cors",
-    credentials: "include", // or "same-origin" if API is same domain
+    credentials: "include",
     prepareHeaders: (headers) => {
       headers.set("Content-Type", "application/json");
-      // Optional — some APIs require Accept headers
+
       headers.set("Accept", "application/json");
 
       // Example: add token if stored
