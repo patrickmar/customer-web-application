@@ -60,7 +60,7 @@ export const api = createApi({
           );
           localStorage.setItem("token", data.token);
         } catch (error) {
-          console.error("Login failed:", error);
+          console.error("Login failedss:", error);
         }
       },
     }),
