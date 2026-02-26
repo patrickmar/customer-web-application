@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "*"
+  to = "https://moloyal.com/test/mosave/customerapi"
+  status = 200
+  force = true
