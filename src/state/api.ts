@@ -11,10 +11,10 @@ import { setCredentials } from "../state/features/authSlice";
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    //baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL,
+    baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL,
     // ✅ Add these options:
-    mode: "cors",
-    credentials: "include",
+    //mode: "cors",
+    //credentials: "include",
     prepareHeaders: (headers) => {
       headers.set("Content-Type", "application/json");
 
@@ -34,7 +34,7 @@ export const api = createApi({
   endpoints: (build) => ({
     register: build.mutation<any, IRegister>({
       query: (register) => ({
-        url: "api/customer/register",
+        url: "/customer/register",
         method: "POST",
         body: register,
       }),
