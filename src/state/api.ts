@@ -13,7 +13,7 @@ export const api = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL,
     // ✅ Add these options:
-    //mode: "cors",
+    mode: "no-cors",
     //credentials: "include",
     prepareHeaders: (headers) => {
       headers.set("Content-Type", "application/json");
