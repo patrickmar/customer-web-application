@@ -22,9 +22,9 @@ const DashboardPage = () => {
   useEffect(() => {
     setMount(true);
   }, []);
-  const { user } = useAppSelector((state) => state.auth);
-
-  const firstName = user?.user?.firstName || "";
+  //const { user } = useAppSelector((state) => state.auth);
+const  user ='';
+ // const firstName = user?.user?.firstName || "";
 
   return (
     <>
@@ -32,7 +32,8 @@ const DashboardPage = () => {
         <Private2>
           <div className="mb-5">
             <h1 className="my-2 text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
-              <Greeting /> {firstName}
+              <Greeting /> {//firstName
+              }
             </h1>
 
             {/* Stat Cards */}
