@@ -8,12 +8,13 @@ import {
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { setCredentials } from "../state/features/authSlice";
 
+
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
     baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL,
     // ✅ Add these options:
-    mode: "no-cors",
+    //mode: "no-cors",
     //credentials: "include",
     prepareHeaders: (headers) => {
       headers.set("Content-Type", "application/json");
@@ -32,6 +33,7 @@ export const api = createApi({
   }),
   tagTypes: ["Users"],
   endpoints: (build) => ({
+    
     register: build.mutation<any, IRegister>({
       query: (register) => ({
         url: "/customer/register",
@@ -44,12 +46,17 @@ export const api = createApi({
       { data: any; message: string; token: string },
       ILogin
     >({
+      
       query: (loginData) => ({
         url: "/customer/login",
         method: "POST",
         body: loginData,
+      
       }),
+     
       async onQueryStarted(arg, { dispatch, queryFulfilled }) {
+          const { data } = await queryFulfilled;
+          console.log(data);
         try {
           const { data } = await queryFulfilled;
           dispatch(

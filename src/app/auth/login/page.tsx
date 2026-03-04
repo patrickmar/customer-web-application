@@ -34,13 +34,13 @@ const Login = () => {
   const [disabled, setDisabled] = useState(true);
   const [passwordType, setPasswordType] = useState("password");
   const [mount, setMount] = useState(false);
-
+//console.log(formData);
   const [login, { data, error, isLoading, isSuccess, isError }] =
     useLoginMutation();
 
   const token = data?.token;
   const userData = data?.data;
-  console.log(userData);
+  //console.log(userData);
   const message =
     data?.message || (error as any)?.data?.message || "Login failed";
 
